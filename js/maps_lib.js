@@ -30,7 +30,7 @@ var MapsLib = {
   //name of the location column in your Fusion Table.
   //NOTE: if your location column name has spaces in it, surround it with single quotes
   //example: locationColumn:     "'my location'",
-  locationColumn:     "geometry",
+  locationColumn:     "address",
 
   map_centroid:       new google.maps.LatLng(41.76619,-72.752895), //center that your map defaults to
   locationScope:      "connecticut",      //geographical area appended to all address searches
@@ -88,7 +88,7 @@ var MapsLib = {
     var whereClause = MapsLib.locationColumn + " not equal to ''";
 
     //-----custom filters-------
-    var type_column = "'Program Type'";
+    var type_column = "Type";
     var tempWhereClause = [];
     if ( $("#cbType1").is(':checked')) tempWhereClause.push("Preschool");
     if ( $("#cbType2").is(':checked')) tempWhereClause.push("Pre-K Programs");
