@@ -81,6 +81,14 @@ var MapsLib = {
   },
 
   doSearch: function(location) {
+    var type_column = "'type'";
+
+if ( $("#rbType1").is(':checked')) whereClause += " AND " + type_column + "=2007";
+if ( $("#rbType2").is(':checked')) whereClause += " AND " + type_column + "=2008";
+if ( $("#rbType3").is(':checked')) whereClause += " AND " + type_column + "=2009";
+if ( $("#rbType4").is(':checked')) whereClause += " AND " + type_column + "=2010";
+if ( $("#rbType5").is(':checked')) whereClause += " AND " + type_column + "=2011";
+
     MapsLib.clearSearch();
     var address = $("#search_address").val();
     MapsLib.searchRadius = $("#search_radius").val();
