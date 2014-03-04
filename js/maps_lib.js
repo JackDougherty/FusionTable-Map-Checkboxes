@@ -97,7 +97,7 @@ var MapsLib = {
     if ( $("#cbType5").is(':checked')) searchType += "5,";
     whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";*/
     //-----Filter by String values did not work properly below
-   * var type_column = "'Program Type'";
+    var type_column = "'Program Type'";
     var tempWhereClause = [];
     if ( $("#cbType1").is(':checked')) tempWhereClause.push("Preschool");
     if ( $("#cbType2").is(':checked')) tempWhereClause.push("Pre-K Programs");
