@@ -21,11 +21,11 @@ var MapsLib = {
 
   //the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be depricated soon
-  fusionTableId:      "1uAKbe1PhZBqd2pcMjm4Qa8FogeK0phNl9L5hUlI",
+  fusionTableId:      "1MsNpAr8bZ3EQhQOqOH9HvlCj8Dy2eZsmp8cMHso",
 
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/
   //*Important* this key is for demonstration purposes. please register your own.
-  googleApiKey:       "AIzaSyDIevSvpV-ONb4Pf15VUtwyr_zZa7ccwq4",
+  googleApiKey:       "xrtsjl286",
 
   //name of the location column in your Fusion Table.
   //NOTE: if your location column name has spaces in it, surround it with single quotes
@@ -88,14 +88,13 @@ var MapsLib = {
     var whereClause = MapsLib.locationColumn + " not equal to ''";
 
   //-----custom filters-------
-    var type_column = "'TypeNum'";
+    var type_column = "2007";
     var searchType = type_column + " IN (-1,";
-    if ( $("#cbType1").is(':checked')) searchType += "1,";
-    if ( $("#cbType2").is(':checked')) searchType += "2,";
-    if ( $("#cbType3").is(':checked')) searchType += "3,";
-    if ( $("#cbType4").is(':checked')) searchType += "4,";
-    if ( $("#cbType5").is(':checked')) searchType += "5,";
+    if ( $("#cbType1").is(':checked')) searchType += "2007";
+    var searchType = type_column + " IN (-1,";
+    if ($("cbType1").is(':checked')) serachType += "2008"
     whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
+    
     //-----Filter by String values did not work properly below
    /* var type_column = "'Program Type'";
     var tempWhereClause = [];
