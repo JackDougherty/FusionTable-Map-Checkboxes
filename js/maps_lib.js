@@ -88,23 +88,23 @@ var MapsLib = {
     var whereClause = MapsLib.locationColumn + " not equal to ''";
 
   //-----custom filters-------
-    var type_column = "'TypeNum'";
+/*    var type_column = "'TypeNum'";
     var searchType = type_column + " IN (-1,";
     if ( $("#cbType1").is(':checked')) searchType += "1,";
     if ( $("#cbType2").is(':checked')) searchType += "2,";
     if ( $("#cbType3").is(':checked')) searchType += "3,";
     if ( $("#cbType4").is(':checked')) searchType += "4,";
     if ( $("#cbType5").is(':checked')) searchType += "5,";
-    whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
+    whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";*/
     //-----Filter by String values did not work properly below
-   /* var type_column = "'Program Type'";
+   * var type_column = "'Program Type'";
     var tempWhereClause = [];
-    if ( $("#cbType1").is(':checked')) tempWhereClause.push("Preschool");
+    if ( $("#cbType1").is(':checked')) tempWhereClause.push("'Preschool'");
     if ( $("#cbType2").is(':checked')) tempWhereClause.push("'Pre-K Programs'");
     if ( $("#cbType3").is(':checked')) tempWhereClause.push("'Home Care'");
-    if ( $("#cbType4").is(':checked')) tempWhereClause.push("Elementary");
+    if ( $("#cbType4").is(':checked')) tempWhereClause.push("'Elementary'");
     if ( $("#cbType5").is(':checked')) tempWhereClause.push("'High School'");
-    whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";*/
+    whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";*
 
     //-------end of custom filters--------
 
