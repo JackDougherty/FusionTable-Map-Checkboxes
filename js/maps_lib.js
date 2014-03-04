@@ -99,11 +99,11 @@ var MapsLib = {
     //-----Filter by String values did not work properly below
    * var type_column = "'Program Type'";
     var tempWhereClause = [];
-    if ( $("#cbType1").is(':checked')) tempWhereClause.push("'Preschool'");
-    if ( $("#cbType2").is(':checked')) tempWhereClause.push("'Pre-K Programs'");
-    if ( $("#cbType3").is(':checked')) tempWhereClause.push("'Home Care'");
-    if ( $("#cbType4").is(':checked')) tempWhereClause.push("'Elementary'");
-    if ( $("#cbType5").is(':checked')) tempWhereClause.push("'High School'");
+    if ( $("#cbType1").is(':checked')) tempWhereClause.push("Preschool");
+    if ( $("#cbType2").is(':checked')) tempWhereClause.push("Pre-K Programs");
+    if ( $("#cbType3").is(':checked')) tempWhereClause.push("Home Care");
+    if ( $("#cbType4").is(':checked')) tempWhereClause.push("Elementary");
+    if ( $("#cbType5").is(':checked')) tempWhereClause.push("High School");
     whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";*
 
     //-------end of custom filters--------
