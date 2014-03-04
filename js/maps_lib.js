@@ -104,7 +104,7 @@ var MapsLib = {
     if ( $("#cbType3").is(':checked')) tempWhereClause.push("Home Care");
     if ( $("#cbType4").is(':checked')) tempWhereClause.push("Elementary");
     if ( $("#cbType5").is(':checked')) tempWhereClause.push("High School");
-    whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";*
+    whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
 
     //-------end of custom filters--------
 
