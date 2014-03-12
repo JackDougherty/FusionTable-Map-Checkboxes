@@ -1,4 +1,6 @@
 /*!
+ * TEMPLATE INSTRUCTIONS: look for sections below marked MODIFY and adjust to fit your data and index.html page
+ * Learn more at
  * Searchable Map Template with Google Fusion Tables
  * http://derekeder.com/searchable_map_template/
  *
