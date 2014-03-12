@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>Search-and-Filter Map Template with checkboxes</title> <!--MODIFY title of web page browser tab -->
+    <!--MODIFY title that appears in web browser tab -->
+    <title>Search-and-Filter Map Template with checkboxes</title> 
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta content='' name='description' />
@@ -23,11 +24,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class='navbar-brand' href='index.html'>Search-and-Filter Map Template with checkboxes</a><!--MODIFY title of web page -->
+          <!--MODIFY title of web page -->
+          <a class='navbar-brand' href='index.html'>Search-and-Filter Map Template with checkboxes</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class='active'><a href="http://epress.trincoll.edu/dataviz" target="_blank">Learn more from free DataViz book at Trinity College CT</a></li><!--MODIFY to insert text and link pointing to your own site-->
+            <!--MODIFY link and text to point to your own site if desired-->
+            <li class='active'><a href="http://epress.trincoll.edu/dataviz" target="_blank">Learn more from free DataViz book at Trinity College CT</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -35,7 +38,7 @@
     <div class='container'>
       <div class='row'>
         <div class='col-md-4'>
-        <!--MODIFY or erase any text or links below between the paragraph <p> tags -->
+        <!--MODIFY or erase any descriptive text or links below between the paragraph <p> tags -->
           <p>Download and modify the template code <a href="https://github.com/JackDougherty/FusionTable-Map-Checkboxes#fusiontable-map-checkboxes">from GitHub</a><br>Based on <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> by <a href='http://derekeder.com'>Derek Eder</a><br>Draws data from <a href='http://support.google.com/fusiontables/answer/2571232?hl=en&ref_topic=1652595'>Google Fusion Tables</a></p>
           <div class='well'>
             <h4>
@@ -48,22 +51,24 @@
               <label>
                 within
                 <select id='search_radius'>
-                  <option value='400'>2 blocks</option> <!--MODIFY any values to display in search feature-->
+                  <!--MODIFY search options. Values are metric: 1610 meters = 1 mile -->
+                  <option value='400'>2 blocks</option> 
                   <option value='805'>1/2 mile</option>
-                  <option value='1610'>1 mile</option> <!--Values expressed in meters: 1610 meters = 1 mile -->
+                  <option value='1610'>1 mile</option> 
                   <option value='3220'>2 miles</option>
                 </select>
               </label>
             </p>
 
             <h4>
-              Program type <!--MODIFY legend heading and labels below (such as Preschool) to match your data -->
+            <!--MODIFY legend heading (Program type), labels (such as Preschool), and colors to match your data -->
+              Program type 
             </h4>
             <ul class='inputs-list unstyled'>
               <li>
                 <label class='checkbox inline'>
                   <input type='checkbox' id='cbType1' />
-                  <span class='filter-box filter-blue'></span>  <!--MODIFY color on this line and below -->
+                  <span class='filter-box filter-blue'></span>  <!--MODIFY colors on this line and below -->
                   Preschool  <!--MODIFY labels on this line and below -->
                 </label>
               </li>
