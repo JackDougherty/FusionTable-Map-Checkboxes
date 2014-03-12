@@ -14,11 +14,13 @@ Basic steps:
 1) Make your own copy of this template: either Fork to your own GitHub account, or Download to your desktop
 
 2) Modify two files, following instructions in the code comments:
-index.html
-maps_lib.js (located inside the js folder)
+- index.html
+- maps_lib.js (located inside the js folder)
 
 3) Host everything on the web (such as a GitHub repository gh-pages branch)
 
 Learn more:
+
 Based on Google Fusion Table Map template (with checkbox filter option) by Derek Eder
+
 http://derekeder.com/searchable_map_template/
