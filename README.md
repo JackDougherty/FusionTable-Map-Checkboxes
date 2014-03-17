@@ -11,7 +11,7 @@ OR
 
 Basic steps:
 
-1) Make your own copy of this template: either Fork to your own GitHub account, or Download to your desktop
+1) Make your own copy of this template: either Fork to your own GitHub account, or Clone in Desktop, or Download a ZIP compressed version to your desktop.
 
 2) Modify two files, following instructions in the code comments:
 - index.html
@@ -19,8 +19,8 @@ Basic steps:
 
 3) Host everything on the web (such as a GitHub repository gh-pages branch)
 
-Learn more:
+Learn more in an open-access Data Visualization book-in-progress by Jack Dougherty at Trinity College
+http://epress.trincoll.edu/dataviz
 
 Based on Google Fusion Table Map template (with checkbox filter option) by Derek Eder
-
 http://derekeder.com/searchable_map_template/
