@@ -1,4 +1,6 @@
 /*!
+ * TEMPLATE INSTRUCTIONS: look for sections below marked MODIFY and adjust to fit your data and index.html page
+ * Learn more at
  * Searchable Map Template with Google Fusion Tables
  * http://derekeder.com/searchable_map_template/
  *
@@ -19,21 +21,21 @@ var MapsLib = {
   //Setup section - put your Fusion Table details here
   //Using the v1 Fusion Tables API. See https://developers.google.com/fusiontables/docs/v1/migration_guide for more info
 
-  //the encrypted Table ID of your Fusion Table (found under File => About)
+  //MODIFY the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be depricated soon
   fusionTableId:      "1uAKbe1PhZBqd2pcMjm4Qa8FogeK0phNl9L5hUlI",
 
-  //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/
+  //MODIFY Google Fusion Tables API key. found at https://code.google.com/apis/console/
   //*Important* this key is for demonstration purposes. please register your own.
   googleApiKey:       "AIzaSyDIevSvpV-ONb4Pf15VUtwyr_zZa7ccwq4",
 
-  //name of the location column in your Fusion Table.
+  //MODIFY name of the location column in your Fusion Table.
   //NOTE: if your location column name has spaces in it, surround it with single quotes
   //example: locationColumn:     "'my location'",
   locationColumn:     "Address",
 
-  map_centroid:       new google.maps.LatLng(41.76619,-72.752895), //center that your map defaults to
-  locationScope:      "connecticut",      //geographical area appended to all address searches
+  map_centroid:       new google.maps.LatLng(41.76619,-72.752895), //MODIFY center that your map defaults to
+  locationScope:      "connecticut",      //MODIFY geographical area appended to all address searches
   recordName:         "result",       //for showing number of results
   recordNamePlural:   "results",
 
@@ -89,8 +91,9 @@ var MapsLib = {
 
   //-----custom filters-------
 
-    //---Filter by text, matched with column header and values in your Google Fusion Table
-    var type_column = "'Program Type'";
+    //---MODIFY column header and values below to match your Google Fusion Table AND index.html
+    //-- TEXTUAL OPTION to display legend and filter by non-numerical data in your table
+    var type_column = "'Program Type'";  // -- note use of single & double quotes for two-word column header
     var tempWhereClause = [];
     if ( $("#cbType1").is(':checked')) tempWhereClause.push("Preschool");
     if ( $("#cbType2").is(':checked')) tempWhereClause.push("Pre-K Programs");
@@ -99,7 +102,7 @@ var MapsLib = {
     if ( $("#cbType5").is(':checked')) tempWhereClause.push("High School");
     whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
 
-    //-- To filter by numbers, remove commenting and use code below:
+    //-- NUMERICAL OPTION - to display and filter a column of numerical data in your table, use this instead
     /*    var type_column = "'TypeNum'";
     var searchType = type_column + " IN (-1,";
     if ( $("#cbType1").is(':checked')) searchType += "1,";
